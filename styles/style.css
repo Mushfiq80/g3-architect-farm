@@ -9,10 +9,15 @@ body {
 } */
 
 header {
+    background: rgba(255, 144, 14, 0.1);
+    margin-bottom: 100px;
+}
+
+.head,
+nav {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .head {
@@ -24,10 +29,19 @@ header {
 
 .head-title {
     margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    width: 50%;
 }
 
 .head-description {
     margin-bottom: 32px;
+    text-align: center;
+    width: 50%;
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .head img {
@@ -50,6 +64,18 @@ header {
     padding: 21px 25px;
 }
 
+.btn-secondary {
+    background: #131313;
+    height: 64px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    border-style: none;
+    padding: 21px 25px;
+
+}
+
 .bar {
     width: 5px;
     height: 106px;
@@ -62,16 +88,32 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    align-items: center;
+    /* margin-top: 25px; */
+}
+
+.nav-title {
+    color: #131313;
+    font-weight: 700px;
+    font-size: 45px;
 }
 
 nav ul {
     display: flex;
     gap: 40px;
+
 }
 
 nav li {
+
     list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 /* ----------
@@ -241,6 +283,34 @@ Love and enjoy section
 .logo img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+/* -------------------
+    Hire Us Section 
+------------------ --*/
+.hire-us {
+
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../images/Hire-us.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    border-radius: 8px;
+    /* inside work  */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.hire{
+    font-weight: 600;
+font-size: 40px;
+/* text-align: center; */
+}
+.hire-des{
+    font-weight: 400;
+font-size: 20px;
 }
 
 footer {
