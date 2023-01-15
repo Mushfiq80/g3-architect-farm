@@ -35,6 +35,17 @@ nav {
     width: 50%;
 }
 
+@media screen and (max-width: 576px) {
+    .head-title {
+        margin-bottom: 25px;
+        font-weight: 500;
+        font-size: 44px;
+        text-align: center;
+        width: 50%;
+    }
+}
+
+
 .head-description {
     margin-bottom: 32px;
     text-align: center;
@@ -76,13 +87,6 @@ nav {
 
 }
 
-.bar {
-    width: 5px;
-    height: 106px;
-    background: #FF900E;
-    border-radius: 8px;
-    border-style: none;
-}
 
 /* Navigation bar design  */
 nav {
@@ -90,6 +94,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     /* margin-top: 25px; */
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+
 }
 
 .nav-title {
@@ -101,7 +112,13 @@ nav {
 nav ul {
     display: flex;
     gap: 40px;
+}
 
+@media screen and (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 nav li {
@@ -133,7 +150,15 @@ main {
     align-items: center;
     gap: 75px;
     margin-bottom: 130px;
+}
 
+@media screen and (max-width: 576px) {
+    .feature-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 75px;
+        margin-bottom: 130px;
+    }
 }
 
 .pictures {
@@ -141,6 +166,15 @@ main {
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
     row-gap: 24px;
+}
+
+@media screen and (max-width: 576px) {
+    .pictures {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 14px;
+        row-gap: 14px;
+    }
 }
 
 .feature-title {
@@ -167,16 +201,15 @@ main {
 /* ----------------------- 
 Love and enjoy section 
 ----------------------- */
-.flex-bar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+
 
 .addition-title {
     font-weight: 700;
     font-size: 45px;
     color: #131313;
+    border-left: 8px solid #FF900E;
+    border-radius: 2px;
+    padding-left: 10px;
 }
 
 .addition-description {
@@ -199,12 +232,16 @@ Love and enjoy section
     gap: 40px;
 }
 
-.container img {
-    position: relative;
-
-
+@media screen and (max-width: 576px) {
+    .addition-section {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
+.container img {
+    position: relative;
+}
 
 .container .btn-big {
     /* position:relative; */
@@ -222,6 +259,29 @@ Love and enjoy section
     cursor: pointer;
     border-radius: 10px;
     text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .container img {
+        width: 100%;
+    }
+
+    .container .btn-big {
+        font-weight: 500;
+        font-size: 25px;
+        padding: 12px 24px;
+        border: none;
+        background: #FF900E;
+        transform: translate(10%, 0%);
+        color: #FFFFFF;
+        cursor: pointer;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .btn-text {
+        font-weight: 500;
+        font-size: 40px;
+    }
 }
 
 .btn-text {
@@ -246,7 +306,7 @@ Love and enjoy section
 }
 
 .fact-description {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -260,6 +320,15 @@ Love and enjoy section
     column-gap: 110px;
     margin-left: 40px;
     /* max-width: 300px; */
+}
+@media screen and (max-width: 576px) {
+    .factors {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 110px;
+        margin-left: 0px;
+        /* max-width: 300px; */
+    }
 }
 
 .factor {
@@ -278,6 +347,13 @@ Love and enjoy section
     display: flex;
     /* gap: 100px; */
     justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+    .logos {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .logo img {
@@ -303,14 +379,22 @@ Love and enjoy section
     text-align: center;
 }
 
-.hire{
-    font-weight: 600;
-font-size: 40px;
-/* text-align: center; */
+@media screen and (max-width: 576px) {
+    .hire-us{
+        flex-direction: column;
+        
+    }
 }
-.hire-des{
+
+.hire {
+    font-weight: 600;
+    font-size: 40px;
+    /* text-align: center; */
+}
+
+.hire-des {
     font-weight: 400;
-font-size: 20px;
+    font-size: 20px;
 }
 
 footer {
